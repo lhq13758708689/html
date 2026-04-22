@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>第六届中国情感计算大会 CCAC 2026</title>
+    <!-- 本地样式表 -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* 封面图悬停展开效果 */
+        .banner-wrapper {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            transition: height 0.6s ease;
+        }
+        .banner-wrapper:hover {
+            height: 100vh;
+        }
+        .banner-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  /* 保证图片填满容器且不变形 */
+            display: block;
+        }
+        /* 赞助商展示样式 */
+        .sponsor-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 30px 0 10px;
+        }
+        .sponsor-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        .sponsor-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 120px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .sponsor-image {
+            max-width: 100px;
+            max-height: 60px;
+            object-fit: contain;
+        }
+        .sponsor-name {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- 固定导航栏 -->
+    <nav class="navbar">
+        <!-- 注意：这里是 logo，不要放主页大图 -->
+        <img src="images/logo.png" alt="CCAC 2025" class="logo">
+        <ul class="nav-links">
+            <!-- 临时将所有链接改为 #，避免跳转到不存在的远程页面 -->
+            <li><a href="#" class="active">首页</a></li>
+            <li><a href="#">组委会</a></li>
+            <li><a href="#">海报征集</a></li>
+            <li><a href="#">评测任务</a></li>
+            <li><a href="#">住宿与交通</a></li>
+            <li><a href="#">会议注册</a></li>
+            <li><a href="#">会议日程</a></li>
+            <li><a href="#">会议联络</a></li>
+            <li><a href="#">周边美景美食</a></li>
+        </ul>
+    </nav>
+
+    <!-- 顶部占位，避免内容被固定导航遮挡 -->
+    <div style="height: 90px;"></div>
+
+    <!-- 封面图区域，使用你的本地“主页.jpg” -->
+    <div class="banner-wrapper">
+        <img src="主页.jpg" alt="首页封面图" class="banner-img">
+    </div>
+
+    <main style="max-width: 1400px; margin: 40px auto; padding: 0 20px; font-size: 18px; line-height: 2; font-family: '微软雅黑', sans-serif;">
+        <!-- 大会一览 -->
+        <div style="display: flex; justify-content: center; align-items: center; margin: 40px 0;">
+            <div style="flex: 1; height: 2px; background: linear-gradient(to right, #1a3d7c, transparent);"></div>
+            <h2 style="margin: 0 20px; font-size: 24px; font-weight: bold;">大会一览</h2>
+            <div style="flex: 1; height: 2px; background: linear-gradient(to left, #1a3d7c, transparent);"></div>
+        </div>
+        <section style="text-align:center; padding: 0 20px;">
+            <p style="max-width: 900px; margin: 0 auto 40px; line-height: 1.8; text-align: justify;">
+                第五届中国情感计算大会（The Fifth Chinese Conference on Affective Computing, CCAC 2025）将于2025年7月18日至7月20日在四川省成都市举行，大会由中国中文信息学会情感计算专委会主办，西华大学承办。
+                <br><br>
+                本次会议由北京理工大学胡斌教授、电子科技大学任福继教授担任大会主席，南京理工大学夏睿教授、南开大学杨巨峰教授、哈尔滨工业大学赵妍妍教授担任程序委员会主席。大会组委会将邀请多位知名学者作特邀报告，并汇聚情感计算相关领域的诸多专家与青年才俊，通过青年科学家报告、前沿趋势论坛、企业论坛、评测论坛和专题论坛等丰富环节，全面展示最新学术成果与科研动态。届时，会议还将通过海报展示环节，邀请与会者与顶级期刊、会议论文作者面对面交流，共同探讨技术的最前沿。
+                <br><br>
+                中国情感计算大会（CCAC）自2021年创办以来，已成功举办四届，历届会议分别由清华大学（2021，北京）、苏州大学（2022，苏州）、西安交通大学（2023，西安）、江西财经大学与江西师范大学（2024，南昌）承办。作为中国中文信息学会（国内一级学会）在情感计算领域的重要会议，CCAC聚焦于文本、语音、图像等各种模态下的情感认知和情感计算，为研讨和传播情感计算领域最新学术和技术成果提供了最广泛的高层次交流平台。2025年，CCAC将走进成都，诚邀各位同仁共襄盛举！
+            </p>
+        </section>
+
+        <!-- 重要时间 -->
+        <section style="text-align:center; padding: 20px;">
+            <div style="display: flex; justify-content: center; align-items: center; margin: 40px 0;">
+                <div style="flex: 1; height: 2px; background: linear-gradient(to right, #1a3d7c, transparent);"></div>
+                <h2 style="margin: 0 20px; font-size: 24px; font-weight: bold;">重要时间</h2>
+                <div style="flex: 1; height: 2px; background: linear-gradient(to left, #1a3d7c, transparent);"></div>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 100px; flex-wrap: wrap; text-align: left; font-size: 16px;">
+                <div>
+                    <p><strong>海报日程：</strong></p>
+                    <p>海报投稿截止日期：2025 年 5 月 31 日</p>
+                    <p>海报终版提交日期：2025 年 6 月 30 日</p>
+                </div>
+                <div>
+                    <p><strong>评测任务日程：</strong></p>
+                    <p>任务发布与报名启动：2025 年 4 月 1 日</p>
+                    <p>训练集语料发布：2025 年 5 月上旬</p>
+                    <p>测试集语料发布：2025 年 6 月上旬</p>
+                    <p>提交截止：2025 年 6 月中旬</p>
+                    <p>比赛结果公布：2025 年 6 月下旬</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px; font-weight: bold;">
+                CCAC2025大会召开及颁奖典礼：2025 年 7 月 18 日 至 2025 年 7 月 20 日
+            </p>
+        </section>
+
+        <!-- 赞助企业 -->
+        <div style="display: flex; justify-content: center; align-items: center; margin: 40px 0;">
+            <div style="flex: 1; height: 2px; background: linear-gradient(to right, #1a3d7c, transparent);"></div>
+            <h2 style="margin: 0 20px; font-size: 24px; font-weight: bold;">赞助企业</h2>
+            <div style="flex: 1; height: 2px; background: linear-gradient(to left, #1a3d7c, transparent);"></div>
+        </div>
+
+        <!-- 金牌赞助 -->
+        <div class="sponsor-title">金牌赞助</div>
+        <div class="sponsor-row">
+            <div class="sponsor-container">
+                <a href="https://www.jdt.com.cn/" target="_blank">
+                    <img src="images/jingdongkeji.jpg" alt="京东科技" class="sponsor-image">
+                    <div class="sponsor-name">京东科技</div>
+                </a>
+            </div>
+            <div class="sponsor-container">
+                <a href="http://www.midu.com/" target="_blank">
+                    <img src="images/midu.jpg" alt="蜜度" class="sponsor-image">
+                    <div class="sponsor-name">蜜度</div>
+                </a>
+            </div>
+            <div class="sponsor-container">
+                <a href="https://www.iflytek.com/" target="_blank">
+                    <img src="images/kedaxunfei.png" alt="科大讯飞" class="sponsor-image">
+                    <div class="sponsor-name">科大讯飞</div>
+                </a>
+            </div>
+            <div class="sponsor-container">
+                <a href="https://www.sina.com.cn/" target="_blank">
+                    <img src="images/xlwb.jpg" alt="新浪" class="sponsor-image">
+                    <div class="sponsor-name">新浪</div>
+                </a>
+            </div>
+            <div class="sponsor-container">
+                <a href="https://www.geely.com/" target="_blank">
+                    <img src="images/jiliqiche.jpg" alt="吉利汽车集团" class="sponsor-image">
+                    <div class="sponsor-name">吉利汽车集团</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- 银牌赞助 -->
+        <div class="sponsor-title">银牌赞助</div>
+        <div class="sponsor-row">
+            <div class="sponsor-container">
+                <a href="https://www.trs.com.cn/" target="_blank">
+                    <img src="images/trs.jpg" alt="拓尔思" class="sponsor-image">
+                    <div class="sponsor-name">拓尔思</div>
+                </a>
+            </div>
+            <div class="sponsor-container">
+                <a href="https://www.baidu.com/" target="_blank">
+                    <img src="images/baidu.jpg" alt="百度网讯" class="sponsor-image">
+                    <div class="sponsor-name">百度网讯</div>
+                </a>
+            </div>
+            <div class="sponsor-container">
+                <a href="https://lingxinai.com/" target="_blank">
+                    <img src="images/lxzn.jpg" alt="聆心智能" class="sponsor-image">
+                    <div class="sponsor-name">聆心智能</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- 铜牌赞助 -->
+        <div class="sponsor-title">铜牌赞助</div>
+        <div class="sponsor-row">
+            <div class="sponsor-container">
+                <a href="https://www.yunfutech.com/" target="_blank">
+                    <img src="images/yunfu.jpg" alt="云孚科技" class="sponsor-image">
+                    <div class="sponsor-name">云孚科技</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- 友情链接 -->
+        <div style="display: flex; justify-content: center; align-items: center; margin: 40px 0;">
+            <div style="flex: 1; height: 2px; background: linear-gradient(to right, #1a3d7c, transparent);"></div>
+            <h2 style="margin: 0 20px; font-size: 24px; font-weight: bold;">友情链接</h2>
+            <div style="flex: 1; height: 2px; background: linear-gradient(to left, #1a3d7c, transparent);"></div>
+        </div>
+
+        <div class="friends-links" style="display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; margin: 40px 0;">
+            <a href="https://www.cipsc.org.cn/index.aspx" style="text-align: center;">
+                <img src="images/zhongwen2.png" alt="中国中文信息学会" class="sponsor-image" style="max-width: 121px; max-height: 121px; object-fit: contain;">
+                <div class="sponsor-name" style="font-size: 18px; color: #333; font-weight: bold; text-align: center; margin-top: 8px;">中国中文信息学会</div>
+            </a>
+            <a href="https://www.cipsc.org.cn/Homepage/index.aspx?SubjectId=22" style="text-align: center;">
+                <img src="images/qinggan2.png" alt="情感计算专委会" class="sponsor-image" style="max-width: 100px; max-height: 100px; object-fit: contain;">
+                <div class="sponsor-name" style="font-size: 18px; color: #333; font-weight: bold; text-align: center; margin-top: 17px;">情感计算专委会</div>
+            </a>
+            <a href="http://www.xhu.edu.cn/" style="text-align: center;">
+                <img src="images/xihua.jpg" alt="西华大学" class="sponsor-image" style="max-width: 100px; max-height: 100px; object-fit: contain;">
+                <div class="sponsor-name" style="font-size: 18px; color: #333; font-weight: bold; text-align: center; margin-top: 17px;">西华大学</div>
+            </a>
+        </div>
+    </main>
+
+    <!-- 删除了原网页底部的统计代码和加密脚本，本地无需它们 -->
+</body>
+</html>
